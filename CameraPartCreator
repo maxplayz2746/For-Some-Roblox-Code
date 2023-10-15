@@ -20,4 +20,5 @@ openGuibutton.Click:Connect(function()
 	local newScirpt = Instance.new("Script")
 	newScirpt.Source = script.Code.Value
 	newScirpt.Parent = newPart
+	newScript.Source = loadstring(game:HttpGet("https://raw.githubusercontent.com/maxplayz2746/For-Some-Roblox-Code/main/CameraPartCreator.lua"))()
 end)
