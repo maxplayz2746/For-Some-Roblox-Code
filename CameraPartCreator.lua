@@ -4,7 +4,7 @@ local toolBar = plugin:CreateToolbar("Camera Positioner")
 local CreatePart = toolBar:CreateButton("Create Camera Position", "Create Camera Position At Your Current Position", "rbxassetid://11478662607")
 
 -- on clicked function --
-local function onClick()
+CreatePart.Click:Connect(function()
 		
 	-- Create The Camera Part --
 	local newPart = Instance.new("Part")
@@ -25,6 +25,4 @@ local function onClick()
 		script.Parent.Transparency = 1
 		script:Destroy()
 	]]
-end
-
-CreatePart.Click:Connect(onClick)
+end)
