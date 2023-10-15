@@ -5,7 +5,6 @@ local CreatePart = toolBar:CreateButton("Create Camera Position", "Create Camera
 
 -- on clicked function --
 CreatePart.Click:Connect(function()
-		
 	-- Create The Camera Part --
 	local newPart = Instance.new("Part")
 	newPart.Name = "Camera Part"
@@ -17,12 +16,4 @@ CreatePart.Click:Connect(function()
 	newPart.Size = Vector3.new(1,1,1)
 	newPart.CFrame = workspace.Camera.CFrame
 	newPart.Parent = workspace
-		
-	-- Create The Script That Hides The Part --
-	local newScirpt = Instance.new("Script")
-	newScirpt.Parent = newPart
-	newScript.Source = [[
-		script.Parent.Transparency = 1
-		script:Destroy()
-	]]
 end)
