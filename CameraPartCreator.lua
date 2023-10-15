@@ -1,5 +1,5 @@
 -- on clicked function --
-function onClick()
+local function onClick()
 		
 	-- Create The Camera Part --
 	local newPart = Instance.new("Part")
