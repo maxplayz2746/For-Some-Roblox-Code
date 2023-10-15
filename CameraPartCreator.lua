@@ -1,4 +1,6 @@
-CreatePart.Click:Connect(function()
+-- on clicked function --
+function onClick()
+		
 	-- Create The Camera Part --
 	local newPart = Instance.new("Part")
 	newPart.Name = "Camera Part"
@@ -18,4 +20,6 @@ CreatePart.Click:Connect(function()
 		script.Parent.Transparency = 1
 		script:Destroy()
 	]]
-end)
+end
+
+CreatePart.Click:Connect(onClick)
