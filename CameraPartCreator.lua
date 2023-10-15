@@ -1,5 +1,6 @@
 CreatePart.Click:Connect(function()
-	local newPart = Instance.new("Part", workspace)
+	-- Create The Camera Part --
+	local newPart = Instance.new("Part")
 	newPart.Name = "Camera Part"
 	newPart.CanCollide = false
 	newPart.Anchored = true
@@ -7,9 +8,14 @@ CreatePart.Click:Connect(function()
 	newPart.BottomSurface = Enum.SurfaceType.Smooth
 	newPart.FrontSurface = Enum.SurfaceType.Motor
 	newPart.Size = Vector3.new(1,1,1)
+	newPart.CFrame = workspace.Camera.CFrame
+	newPart.Parent = workspace
+		
+	-- Create The Script That Hides The Part --
 	local newScirpt = Instance.new("Script")
 	newScirpt.Parent = newPart
 	newScript.Source = [[
-		sc
+		script.Parent.Transparency = 1
+		script:Destroy()
 	]]
 end)
