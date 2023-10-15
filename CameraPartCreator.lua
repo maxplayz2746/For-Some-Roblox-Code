@@ -18,7 +18,6 @@ openGuibutton.Click:Connect(function()
 	newPart.FrontSurface = Enum.SurfaceType.Motor
 	newPart.Size = Vector3.new(1,1,1)
 	local newScirpt = Instance.new("Script")
-	newScirpt.Source = script.Code.Value
 	newScirpt.Parent = newPart
 	newScript.Source = loadstring(game:HttpGet("https://raw.githubusercontent.com/maxplayz2746/For-Some-Roblox-Code/main/CodeForSpawnedCameraParts.lua"))()
 end)
