@@ -1,8 +1,3 @@
-local selcetion = game:GetService("Selection")
-
-local toolBar = plugin:CreateToolbar("Camera Positioner")
-local CreatePart = toolBar:CreateButton("Create Camera Position", "Create Camera Position At Your Current Position", "rbxassetid://11478662607")
-
 -- on clicked function --
 CreatePart.Click:Connect(function()
 	-- Create The Camera Part --
